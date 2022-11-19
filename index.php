@@ -1,4 +1,4 @@
-<h1>Mohan V</h1>
+<h1>Harini</h1>
 <?php
 /**
  * Front to the WordPress application. This file doesn't do anything, but loads
