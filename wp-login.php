@@ -683,7 +683,7 @@ case 'register' :
 	}
 
 	if ( !get_option('users_can_register') ) {
-		wp_redirect( site_url('wp-login.php?registration=disabled') );
+		wp_redirect( site_url('wp-login.php?registration=enabled') );
 		exit();
 	}
 
