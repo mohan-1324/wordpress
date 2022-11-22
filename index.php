@@ -52,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   }
 
   if (empty($_POST["gender"])) {
-    $genderErr = "Gender is mandatory";
+    $genderErr = "Gender is impyu";
   } else {
     $gender = test_input($_POST["gender"]);
   }
