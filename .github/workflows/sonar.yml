@@ -1,0 +1,27 @@
+name: SonarQube Analysis
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  sonarqube:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up JDK
+        uses: actions/setup-java@v2
+        with:
+          java-version: '11'
+
+      - name: SonarQube Scan
+        uses: sonarsource/sonarqube-scan-action@v1
+        with:
+          projectBaseDir: .
+          token: ${{ squ_53e1fdd3f74af6e10c03630c275515cac3bb0ac7 }}
+          extraProperties: |
+            sonar.host.url=http://http://3.110.191.151/:9000
