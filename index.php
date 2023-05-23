@@ -10,7 +10,7 @@
 <body>  
 
 <?php
-// define variables and set to empty values
+// define variables and set to empty valu
 $nameErr = $emailErr = $genderErr = $websiteErr = "";
 $name = $email = $gender = $comment = $website = "";
 
