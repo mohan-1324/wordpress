@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nameErr = "Name should be capital";
   } else {
     $name = test_input($_POST["name"]);
-    // check if name only contains letters and whitespace
+    // check if name only contains letters and whites
     if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
       $nameErr = "Only letters and white space allowed";
     }
